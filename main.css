@@ -1,0 +1,138 @@
+html {
+    box-sizing: border-box;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+body {
+    background-color: #a2d2ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+ul {
+    list-style: none;
+}
+
+.panel {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px 25px;
+    width: 100%;
+    max-width: 960px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.pricing_plan {
+    border-bottom: 1px solid #a2d2ff;
+    /* border-bottom: 1px solid black; */
+
+}
+
+.pricing_plan:last-child {
+    border-bottom: none;
+}
+
+.pricing_img {
+    margin-bottom: 25px;
+    max-width: 100%;
+}
+
+.pricing_header {
+    color: #8d99ae;
+    /* background-color: #8d99ae; */
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.pricing_featuers {
+    margin: 50px 0 25px;
+    color: #3a86ff;
+}
+
+.pricing_featuers_list {
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 12px;
+    line-height: 1.5;
+    padding: 15px 0px;
+    border-top: 1px solid #a2d2ff;
+}
+
+.pricing_featuers_list:last-child {
+    border-bottom: 1px solid #a2d2ff;
+}
+
+.pricing_price {
+    color: #3a86ff;
+    display: block;
+    font-size: 32px;
+    font-weight: bolder;
+
+}
+
+.pricing_button {
+    color: #3a86ff;
+    display: block;
+    border: #9dd1ff 1px solid;
+    border-radius: 10px;
+    padding: 10px 35px;
+    display: inline-block;
+    text-decoration: none;
+    margin: 25px 0px;
+    transition: background-color 200ms ease-in-out;
+}
+
+.special {
+    color: white;
+    background-color: #3a86ff;
+
+
+    display: block;
+    border: #3786ca 1px solid;
+    border-radius: 10px;
+    padding: 15px 35px;
+    display: inline-block;
+    text-decoration: none;
+    margin: 25px 0px;
+    transition: background-color 200ms ease-in-out;
+}
+
+.pricing_button:hover,
+.pricing_button:focus {
+    background-color: #e1f1ff;
+
+}
+
+.special:hover,
+.special:focus {
+    background-color: #90e0ef;
+    border: #90e0ef;
+    color: #588157;
+    transition: background-color 200ms ease-in-out;
+}
+
+
+@media only screen and (min-width: 900px) {
+    .panel {
+        flex-direction: row;
+    }
+
+    .pricing_plan {
+        border-bottom: none;
+        border-right: 1px solid #e1f1ff;
+        padding: 25px 50px;
+    }
+
+    .pricing-plan:last-child {
+        border-right: none;
+    }
+
+    /*--[ Mobile styles go here]---------------------------*/
+}
